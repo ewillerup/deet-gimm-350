@@ -8,7 +8,6 @@ public class Click : MonoBehaviour
     public GameObject GameController;
 
     void OnClick() {
-        GameController gc = GameController.GetComponent<GameController>();
-        gc.SquareClicked(squareID);
+        transform.Translate(Vector3.left * 0.3f);
     }
 }
