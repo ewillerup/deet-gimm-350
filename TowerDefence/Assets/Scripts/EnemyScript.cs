@@ -7,11 +7,7 @@ public class EnemyScript : MonoBehaviour
     public GameObject[] wayPoints;
     public float speed = 10;
     public int nextWayPoint = 0;
-
-    private void Start()
-    {
-        
-    }
+    
     void FixedUpdate()
     {
         
