@@ -6,6 +6,7 @@ public class MainGameScript : MonoBehaviour
 {
     public GameObject startPoint;
     public GameObject enemy;
+    private int fakeSpawnInterval;
     public int spawnInterval;
 
     private Grid grid;
@@ -19,14 +20,14 @@ public class MainGameScript : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (spawnInterval>20)
+        if (fakeSpawnInterval > spawnInterval)
         {
             Instantiate(enemy);
-            spawnInterval = 0;
+            fakeSpawnInterval = 0;
         }
         else
         {
-            spawnInterval++;
+            fakeSpawnInterval++;
         }
     }
 }
