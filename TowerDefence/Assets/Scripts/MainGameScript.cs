@@ -9,14 +9,14 @@ public class MainGameScript : MonoBehaviour
     private int fakeSpawnInterval;
     public int spawnInterval;
 
-    private Grid grid;
+    //private Grid grid;
 
     private void Start()
     {
         Vector3 start = startPoint.transform.position;
         enemy.transform.position = start;
         //Instantiate(enemy);
-        Grid grid = new Grid(8, 4, 10f);
+        //Grid grid = new Grid(8, 4, 10f);
     }
     void FixedUpdate()
     {
