@@ -7,6 +7,12 @@ public class EnemyScript : MonoBehaviour
     public GameObject[] wayPoints;
     public float speed = 10;
     public int nextWayPoint = 0;
+
+    void Awake() {
+        speed += Random.Range(-2, 2);
+        Rigidbody m_Rigidbody = GetComponent<Rigidbody>();
+        m_Rigidbody.AddForce(transform.up * Random.Range(0, 1000));
+    }
     
     void FixedUpdate()
     {
