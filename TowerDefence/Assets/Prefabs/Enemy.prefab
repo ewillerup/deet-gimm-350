@@ -119,7 +119,7 @@ MonoBehaviour:
   - {fileID: 4314765532942765297, guid: bedfc941a5321b646b35f27efbe28d6a, type: 3}
   - {fileID: 2419067061610977940, guid: 951e762d93b641840a3db64458c69a44, type: 3}
   - {fileID: 7409977549457321623, guid: 3c66cc20cbb41e747b639ee8124854fc, type: 3}
-  speed: 2
+  speed: 7
   nextWayPoint: 0
 --- !u!54 &1182895685181914066
 Rigidbody:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Deathray : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Deathray : MonoBehaviour
     public Vector3 forward;
     public int count = 0;
     public bool beeHit = false;
+    public Text Score;
+    public int IntScore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +34,9 @@ public class Deathray : MonoBehaviour
 
 
                     Destroy(hit.collider.gameObject);
-                   
 
+                    IntScore += 1;
+                    Score.text = IntScore.ToString();
                    
                 }
             }

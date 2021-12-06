@@ -8,6 +8,7 @@ public class MainGameScript : MonoBehaviour
     public GameObject enemy;
     private int fakeSpawnInterval;
     public int spawnInterval;
+    public Deathray MyDeathray;
 
     private Grid grid;
 
@@ -17,9 +18,15 @@ public class MainGameScript : MonoBehaviour
         enemy.transform.position = start;
         //Instantiate(enemy);
         Grid grid = new Grid(8, 4, 10f);
+     
     }
     void FixedUpdate()
     {
+        if (spawnInterval >= 8)
+        {
+            spawnInterval = 30 - MyDeathray.IntScore;
+        }
+       
         if (fakeSpawnInterval > spawnInterval)
         {
             Instantiate(enemy);
