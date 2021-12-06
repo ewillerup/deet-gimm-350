@@ -30,15 +30,10 @@ public class Deathray : MonoBehaviour
                     
 
 
-                    //Destroy(hit.collider.gameObject);
-                    count++;
+                    Destroy(hit.collider.gameObject);
+                   
 
-                    if (count >= 20)
-                    {
-                        Debug.Log("count limit");
-                        Destroy(hit.collider.gameObject);
-                        count = 0;
-                    }
+                   
                 }
             }
 
