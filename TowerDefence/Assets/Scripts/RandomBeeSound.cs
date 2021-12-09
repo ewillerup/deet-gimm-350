@@ -24,7 +24,7 @@ public class RandomBeeSound : MonoBehaviour
     }
 
 	void OnCollisionEnter(Collision collision) {
-		if (Time.timeSinceLevelLoad > 1)
+		//if (Time.timeSinceLevelLoad > 1)
 			PlaySound();
 	}
 }
